@@ -17,7 +17,7 @@ public class SecurityAspect {
     public void authorizationPointCut(){
     }
 
-    @Before("authorizationPointCut()")
+    @Before("authenticationPointCut()")
     public void authenticate(){
         System.out.println("Authenticating the Request");
     }
